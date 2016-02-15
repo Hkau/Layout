@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinner planner</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+ 
+<style>
+body{
+background: #eee;
+
+      border-left: 3px solid #555;
+     border-right: 3px solid #555;
+
+}
+
+#left-column{
+  background-color:#555;
+      float: left;
+      color:white;
+      width:250px;
+      padding:5px;
+      height:500px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+
+
+.navbar-default{ 
+	background-color:#eee;
+	color:#555;
+   border-bottom: 3px solid #555;
+      border-top: 3px solid #555;
+      margin-bottom: 0px;
+    
+}
+
+
+.jumbotron{
+  height:70px;
+  width: 1024px;
+    background-color:#f0ad4e;
+  color:#555;
+  padding-top:20px;
+  float:left;
+
+
+}
+
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+
+img.floatrightclear{
+  float:left;
+  clear: left;
+  margin-bottom:70px;
+}
+
+
+#right-column{
+  font-family: Lato;
+  font-size: 12px;
+  height: 100px;
+  width: 200px;
+  float:left;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.right{
+ font-family: Lato;
+  font-size: 12px;
+  height: 100px;
+  width: 200px;
+  float:right;
+  margin-right: 100px;
+ text-align: center;
+}
+
+
+ .input-group{
+    color:black;
+    width:600px;
+  }
+
+  .img{
+    height:150px;
+    width: 300px;
+    background-position: 50% 50%;
+    }
+
+.container{
+  float:right;
+}
+
+
+
+}
+
+
+}
+</style>
+
+  </head>
+  <body>
+
+<nav class="navbar navbar-default">
+      <div class="navbar-header col-xs-12"><h1>HOMELETTE<small> this is a fantastic page </small</h1>
+
+    </div>
+</nav>
+       <div id="left-column"> 
+       <div id="exampleView" class="float">
+   <h3>My Dinner</h3>
+   <div>
+    Number of guests: <span id="numberOfGuests"></span>
+  </div>
+  <div align="right">
+      <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+       <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+  </div>
+   <br>
+   <div>
+    <table id="totalTable" class="table table-hover" style="width:100%">
+    <thead>
+     <tr>
+      <td>Dish Name</td> 
+       <td>Cost</td>
+     </tr>
+    </thead>
+    <tbody>
+    <tr></tr>
+    </tbody>
+    </table>
+      <HR>
+      <div align="right" id="totalPrice"></div>
+      <br>
+      <div align="center">
+      <a href="dinneroverviews.html"><button id="confirm" type="button" class="btn btn-warning">Confirm Dinner</button></a>
+      </div>
+   </div>
+  </div></div>
+
+    <div id="right-column"> <h3><b> Lasagna</h3></b></p>
+      <div class="img" style="background-image:url('http://www.tasteofsicilyinco.com/wp-content/uploads/2015/12/lasagna.jpg');">
+        </div> <br></br>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et leo at nulla posuere sollicitudin id quis ligula. Quisque laoreet pulvinar tristique. Vestibulum consequat, nulla at molestie aliquet, urna nulla pulvinar dui, vitae viverra lacus leo id magna. Nunc quis leo porta, congue enim semper, vehicula ex. Donec a tempor erat. </p>
+
+    <a href="selectdish.html"><button class="btn btn-warning" type="button" float:right; >Go back to select dish</button></a></div>
+
+<div class= "right">
+    <section>
+
+    <h2>Ingredients for 4 people</h2>
+
+    <p>
+    2 tbsp    olive oil             SEK     20  
+    </p>
+    <p>
+    2 tbsp    olive oil             SEK     20  
+    </p>
+
+<p>
+    2 tbsp    olive oil             SEK     20  
+    </p>
+<p>
+    2 tbsp    olive oil             SEK     20  
+    </p>
+<p>
+    2 tbsp    olive oil             SEK     20  
+    </p>
+<p>SEK     100  </p>
+
+    </br>
+    </br>
+    <a href="selectdish.html"><input id="confirm" class="btn btn-warning" type="button" value="Confirm Dish"></a>
+    </div>
+</div>
+  </div>
+  </div>
+
+
+</div>
+</div>
+
+
+
+  
+
+  <!-- jQuery 
+    <img style="border:1px solid black;" src="hej.jpg" class="floatrightclear" alt="Cinque Terre" width="200" height="200" align="left"> 
+    
+      <div class= "left"> <h3><b> Lasagna</h3></b></p>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et leo at nulla posuere sollicitudin id quis ligula. Quisque laoreet pulvinar tristique. Vestibulum consequat, nulla at molestie aliquet, urna nulla pulvinar dui, vitae viverra lacus leo id magna. Nunc quis leo porta, congue enim semper, vehicula ex. Donec a tempor erat. </p></div>
+
+      <div class= "right"><h3><b>Preperation</h3></b></p>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et leo at nulla posuere sollicitudin id quis ligula. Quisque laoreet pulvinar tristique. Vestibulum consequat, nulla at molestie aliquet, urna nulla pulvinar dui, vitae viverra lacus leo id magna. Nunc quis leo porta, congue enim semper, vehicula ex. Donec a tempor erat.  vitae viverra lacus leo id magna. Nunc quis leo porta, congue enim semper.</p></div>
+
+     
+ <img style="border:1px solid black;" src="hej.jpg" class="floatrightclear" alt="Cinque Terre" width="250" height="200" align=""> 
+    
+      <div class= "left2"> <h3><b> Lasagna</h3></b></p>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et leo at nulla posuere sollicitudin id quis ligula. Quisque laoreet pulvinar tristique. Vestibulum consequat, nulla at molestie aliquet, urna nulla pulvinar dui, vitae viverra lacus leo id magna. Nunc quis leo porta, congue enim semper, vehicula ex. Donec a tempor erat. </p></div>
+
+      <div class= "right1"><h3><b>Preperation</h3></b></p>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et leo at nulla posuere sollicitudin id quis ligula. Quisque laoreet pulvinar tristique. Vestibulum consequat, nulla at molestie aliquet, urna nulla pulvinar dui, vitae viverra lacus leo id magna. Nunc quis leo porta, congue enim semper, vehicula ex. Donec a tempor erat.  vitae viverra lacus leo id magna. Nunc quis leo porta, congue enim semper, vehicula ex. Donec a tempor erat. </p></div>
+
+      </div> 
+</div>
+      <!-- jQuery 
+
+    <div id="exampleView">
+      <div>
+        Number of guests: <span id="numberOfGuests"></span>
+      </div>
+      <div>
+          <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+        <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+      </div>
+    </div>
+  </div>
+-->
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+	<!-- The application JavaScript code -->
+	<script src="js/app.js"></script>
+	<script src="js/model/dinnerModel.js"></script>
+	<script src="js/view/exampleView.js"></script>
+	<script src="js/view/exampleViewController.js"></script>
+  </body>
+</html>

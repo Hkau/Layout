@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinner planner</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+ 
+<style>
+body{
+background: #eee;
+
+      border-left: 3px solid #555;
+     border-right: 3px solid #555;
+
+}
+
+.navbar-default{ 
+  background-color:#eee;
+  color:#555;
+   border-bottom: 3px solid #555;
+      border-top: 3px solid #555;
+      margin-bottom: 0px;
+    
+}
+
+
+.jumbotron{
+  height:70px;
+    background-color:#f0ad4e;
+  color:#555;
+  padding-top:2px;
+
+
+}
+
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+
+img.floatrightclear{
+  float:left;
+  clear: left;
+  margin-bottom:70px;
+}
+
+
+.right{
+  font-family: Lato;
+  font-size: 12px;
+  height: 100px;
+  width: 200px;
+  float:right;
+
+}
+
+.left{
+ font-family: Lato;
+  font-size: 12px;
+  height: 100px;
+  width: 200px;
+  float:left;
+  padding-left: 40px;
+  text-align: center;
+
+}
+
+
+.right1{
+  font-family: Lato;
+  font-size: 12px;
+  height: 123px;
+  width: 240px;
+  float:right;
+
+}
+.left2{
+ font-family: Lato;
+  font-size: 12px;
+  height: 123px;
+  width: 240px;
+  float:left;
+  padding-left: 40px;
+  text-align: center;
+
+}
+
+.row{
+     margin-left: 150px;
+      color:white;
+      width:100%;
+      padding:15px; 
+      text-align: right;
+    }
+    .img{
+    height:250px;
+    background-position: 50% 50%;
+    }
+
+
+ .textbox{
+     height:60
+
+     px; 
+     text-align: center;
+    }
+
+}
+</style>
+
+  </head>
+  <body>
+
+<nav class="navbar navbar-default">
+      <div class="navbar-header col-xs-12"><h1>HOMELETTE<small> this is a fantastic page </small</h1>
+
+    </div>
+</nav>
+<div class = "jumbotron">
+      <h2>My dinner: 4 people<a href="selectdish.html"><button class = "btn pull-right btn-gray-light ">Go back and edit dinner</button></a></h2>
+
+    </div>
+<div class="row" id="menuOverviewView">
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <div class="img" style="background-image:url('http://www.tasteofsicilyinco.com/wp-content/uploads/2015/12/lasagna.jpg');">
+        </div>
+         <div class="textbox">
+          <h3>Figue</h3>
+        </div>
+      </a>
+      <p><span id="starterPrice"></span></p>
+    </div>
+     <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <div class="img" style="background-image:url('http://4.bp.blogspot.com/-LOT9ipFKyg0/TsHXA5G3V0I/AAAAAAAAEmA/msMbMouD19c/s1600/crock-pot-skinny-turkey-meatballs.jpg');" alt="...">
+        </div>
+        <div class="textbox">
+          <h3>Meatballs</h3>
+        </div>
+      </a>
+      <p><span id="mainDishPrice"></span></p>
+      <a href="dinnerprep.html"><input class="btn btn-warning" type="button" value="Print Full Recipe" ></a>
+    </div>
+     <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <div class="img" style="background-image:url('http://d2f0ora2gkri0g.cloudfront.net/bkpam2148523_3fcbf716pizza2.jpg');"  alt="...">
+        </div>
+          <div class="textbox">
+          <h3>Pizza</h3>
+        </div>
+
+      </a>
+      <p><span id="dessertPrice"></span></p>
+
+  
+
+
+
+    </div>
+  
+  
+</div>
+
+  
+      <!-- jQuery 
+
+    <div id="exampleView">
+      <div>
+        Number of guests: <span id="numberOfGuests"></span>
+      </div>
+      <div>
+          <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+        <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+      </div>
+    </div>
+  </div>
+-->
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+  <!-- The application JavaScript code -->
+  <script src="js/app.js"></script>
+  <script src="js/model/dinnerModel.js"></script>
+  <script src="js/view/exampleView.js"></script>
+  <script src="js/view/exampleViewController.js"></script>
+  </body>
+</html>

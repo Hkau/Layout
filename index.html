@@ -8,20 +8,56 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+ 
+<style>
+body{
+	background: url('https://d2dog1d9ysauaf.cloudfront.net/attachments/59478b278541a4141461147c6e21f2160cb28d9f/store/a1b637712bb235a9c53a3cfe975b8926a81500666aeeeed1a1cc41f1f80d/large-monthly-planner.png');;
+}
+
+.navbar-default{ 
+	background-color:#f0ad4e;
+	color:#555;
+}
+
+.jumbotron{
+    background-color:##D4D8D1;
+    color:#555;
+    float:left;
+    margin-top: 100px;
+    width: 500px;
+
+  
+}
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 7px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+</style>
 
   </head>
   <body>
+
+  	<nav class="navbar navbar-default">
+    <div class="navbar-header"><h1>HOMELETTE</h1>
+
+    </div>
+</nav>
+
 	<div class="container">
-		<h1>Dinner planner</h1>
-		<div id="exampleView">
-			<div>
-				Number of guests: <span id="numberOfGuests"></span>
-			</div>
-			<div>
-          <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-			</div>
-		</div>
+		<div class = "jumbotron">
+			<h3><u>A home dinner service</u></h3>
+			<p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute. 
+
+</p>
+
+			<button id="selectdish" type="submit" class = "btn btn-warning btn-lg">Create new dinner</button> 
+
 	</div>
 
     <!-- jQuery -->
@@ -30,9 +66,8 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
 	<!-- The application JavaScript code -->
-	<script src="js/app.js"></script>
+	<script src="js/app0.js"></script>
 	<script src="js/model/dinnerModel.js"></script>
-	<script src="js/view/exampleView.js"></script>
-	<script src="js/view/exampleViewController.js"></script>
+	<script src="js/view/firstView.js"></script>
   </body>
 </html>

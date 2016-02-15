@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinner planner</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+ 
+<style>
+body{
+	background: #FFFFFF
+}
+
+.navbar-default{ 
+	background-color:#f0ad4e;
+	color:#555;
+}
+
+.float {
+    float:left;
+    height: 700px;
+    width: 200px;
+    background: #696969;
+    color: #FFFFFF;
+}
+.float2 {
+    float:left;
+    height: 130px;
+    width: 1164px;
+    background: #FFD700;
+}
+
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 7px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+</style>
+
+  </head>
+  <body>
+
+  	<nav class="navbar nav-tabs navbar-default">
+    <div class="navbar-header"><h1>HOMELETTE <small><em>From the best chefs in the world directly into your kitchen</em></small></h1>
+
+    </div>
+</nav>
+
+<div id="exampleView" class="float">
+   <h3>My Dinner</h3>
+   <div>
+		Number of guests: <span id="numberOfGuests"></span>
+	</div>
+	<div align="right">
+      <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+       <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+	</div>
+   <br>
+   <div>
+    <table id="totalTable" class="table table-hover" style="width:100%">
+    <thead>
+     <tr>
+      <td>Dish Name</td> 
+       <td>Cost</td>
+     </tr>
+    </thead>
+    <tbody>
+    <tr></tr>
+    </tbody>
+    </table>
+      <HR>
+      <div align="right"><span id="totalPrice"></span></div>
+      <br>
+      <div align="center">
+      <a href="dinneroverviews.html"><button id="confirm" type="button" class="btn btn-primary">Confirm Dinner</button></a>
+      </div>
+   </div>
+	</div>
+
+<div id="nextView" class="float2">
+   <h4>&nbsp;SELECT DISH</h4>
+   <HR>
+<div class="row">
+  <div class="col-lg-5">
+    <div class="input-group">
+      <input id="searchWord" type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button id="search" class="btn btn-default" type="button">Search</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-5">
+      <select id="selecter" class="form-control">
+        <option>main dish</option>
+        <option>starter</option>
+        <option>dessert</option>
+      </select>
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+</div><!-- ./nextView -->
+<br>
+<div class="row">
+  <div class="col-sm-3">
+    <div class="thumbnail">
+      <img src="images/bakedbrie.jpg">
+      <div align="center" class="caption">
+        <p><button id="mealb" class="btn btn-primary" role="button">bakedbrie</button></p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute. </p>
+      </div>
+    </div>
+  </div>
+
+<div class="col-sm-3">
+    <div class="thumbnail">
+      <img src="images/icecream.jpg">
+      <div align="center" class="caption">
+        <p><button id="meali" class="btn btn-primary" role="button">icecream</button></p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-3">
+    <div class="thumbnail">
+      <img src="images/meatballs.jpg">
+      <div align="center" class="caption">
+        <p><button id="mealm" class="btn btn-primary" role="button">meatballs</button></p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute. </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+	<!-- The application JavaScript code -->
+	<script src="js/app1.js"></script>
+	<script src="js/model/dinnerModel.js"></script>
+	<script src="js/view/exampleView.js"></script>
+  <script src="js/view/nextView.js"></script>
+	<script src="js/view/exampleViewController.js"></script>
+  </body>
+</html>
